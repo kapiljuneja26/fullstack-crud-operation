@@ -1,0 +1,21 @@
+
+  <h3>Login</h3>
+  <div *ngIf=flag>
+    <h3>
+      Authentication Failed!
+    </h3>
+  </div>
+<table>
+  <tr>
+    <th><label>User Name</label></th>
+    <td><input type="text" name="username" id="username" #name></td>
+  </tr>
+  <tr>
+    <th><label>Password</label></th>
+    <td><input type="text" name="password" id="password" #password></td>
+  </tr>
+  <tr>
+    <th></th>
+    <th><input type="button" name="submit" value="submit" (click)="login(name.value,password.value)"></th>
+  </tr>
+</table>
